@@ -11,9 +11,9 @@ def selection_sort(seq):
 
 #seq=[2,5,7,1,9,6]
 seq=[]
-#n=int(input("enter the no. of elements"))
-#for i in range(n):
-seq.extend(input())
+n=int(input("enter the no. of elements"))
+for i in range(n):
+    seq.append(input())
 
 selection_sort(seq)
 print(seq)
