@@ -1,3 +1,5 @@
+#function call for insertion sort.
+
 def insertion_sort(seq):
     for i in range(1,len(seq)):
         for j in range(0,i):
