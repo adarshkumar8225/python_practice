@@ -1,0 +1,24 @@
+#give maxm remainder of the function .refer hackrank submission for qstn
+k,m=map(int,input().split())
+l=[]
+y=[]
+r=0
+for i in range(0,k):
+    x=list(map(int,input().split()))
+    
+    l.append(x)
+for i in range(k):
+    max=0
+    for j in l[i]:
+        rem=j*j % m
+        if(rem>max):
+            max=rem
+            q=j
+    y.append(q)        
+sum=0    
+for i in y:
+    sum= sum+i**2
+
+print(sum%m)
+
+
